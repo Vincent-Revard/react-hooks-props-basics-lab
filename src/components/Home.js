@@ -1,11 +1,10 @@
 import React from "react";
 
 function Home(props) {
+  const { userName, userColor, userCity } = props
   return (
     <div id="home">
-      <h1 style={{ color: props.color }}>
-        {props.name} is a Web Developer from {props.city}
-      </h1>
+      <h1 style={{ color: userColor }}>{userName} is a Web Developer from {userCity}</h1>
     </div>
   );
 }
